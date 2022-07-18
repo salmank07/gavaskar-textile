@@ -7,6 +7,7 @@ import jump from 'jump.js';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  heroes:boolean = false;
   title = 'gavaskar-tex';  
   ariaExpanded: boolean = false;
   windowScrolled: boolean = false;
