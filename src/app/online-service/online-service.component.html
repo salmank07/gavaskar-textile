@@ -1,0 +1,122 @@
+<section class="nav_bar">
+  <nav class="navbar fixed-top navbar-expand-md bg-light" id="mainNav">
+    <div class="container">
+      <a class="px-3 navbar-brand text-white cursorp"><img src="../assets/images/logo.png" routerLink="" height="100px"
+          class="imgProp w-100" alt=""></a>
+      <button class="navbar-toggler" id="menu-button" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon h-100">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-3 px-md-0 px-lg-0">
+          <li class="nav-item">
+            <a class="nav-link cursorp" routerLink="" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cursorp" routerLink="">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cursorp" routerLink="">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              routerLink="">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-dark" href="#">Acs Chappala</a></li>
+              <li><a class="dropdown-item" href="#">Acs Online Services</a></li>
+              <li><a class="dropdown-item" href="#">Acs Data Analysis</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cursorp" routerLink="">Training</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cursorp" routerLink="">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+<section id="online" class="online">
+  <div class="container">
+    <h3 class="secTitle text-center pb-5">Online Services</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col-md-4" *ngFor="let item of services" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100">
+          <img [src]="item.src" class="imgProp card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">{{ item.title }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3 class="secTitle text-center py-5">Other Services</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4 otherservice">
+      <div class="col-md-4" *ngFor="let item of allService; let i = index" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100">
+          <div class="card-body px-0 py-0 d-flex align-items-center">
+            <div class="forbg d-flex align-items-center h-100 ">
+              <div class="textWrapper d-flex align-items-center justify-content-center">
+                <h4 class="m-0 text-light">{{ i + 1 }}</h4>
+              </div>
+            </div>
+            <h5 class="card-title">{{ item.Title }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer d-flex align-items-center" id="footer">
+  <div class="container">
+    <div class="row g-4 p-2 row-cols-sm-3 row-cols-md-4 ">
+      <div class="col-md-4">
+        <h3 class="mb-4">
+          Acs Global Ventures
+        </h3>
+        <p>
+          An application developer’s typical responsibilities include coding, designing, application management,
+          troubleshooting, monitoring updates and possible security threats, and providing end user support.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h6>
+          Quick Links
+        </h6>
+        <ul>
+          <li><a class="cursorp" routerLink="">Home</a></li>
+          <li><a class="cursorp" routerLink="">About</a></li>
+          <li><a class="cursorp" routerLink="">Services</a></li>
+          <li><a class="cursorp" routerLink="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6>
+          Contact Information
+        </h6>
+        <ul>
+          <li><span class="iconcontainer"><i class="fa-solid fa-location-arrow"></i></span>Johnson Complex,
+            Kandanvilai,<br />
+            Kanyakumari Dist,<br />Tamil Nadu, India</li>
+          <li><span class="iconcontainer"><i class="fa-solid fa-phone"></i></span><a href="tel:+919486020203">94860
+              20203</a></li>
+          <li><span class="iconcontainer"><i class="fa-solid fa-envelope"></i></span><a
+              href="mailto:acsglobalventures2021@gmail.com">acsglobalventures2021@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col">
+        <p class="text-center">This website is made with <span><i class="fa-solid fa-heart"></i></span> by
+          <a href="https://rsinfosolution.in/" class="text-light">Rsinfosolution</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

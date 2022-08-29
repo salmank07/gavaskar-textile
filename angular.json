@@ -31,12 +31,16 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/aos/dist/aos.css",
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.css"
+              
             ],
-            "scripts": [ 
+            "scripts": [
+              "node_modules/aos/dist/aos.js",
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"             
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+             
             ]
           },
           "configurations": {
@@ -44,13 +48,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
+                  "maximumWarning": "700kb",
                   "maximumError": "1mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "8kb",
+                  "maximumError": "15kb"
                 }
               ],
               "fileReplacements": [

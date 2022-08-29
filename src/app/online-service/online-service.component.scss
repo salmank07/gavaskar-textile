@@ -1,3 +1,56 @@
+#online {
+  padding: 4rem 0;
+  background-color: #e6e6e6;
+}
+
+#online .card {
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: 0.3s all ease-in;
+}
+
+#online .card:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#online img {
+  border-radius: 12px 12px 0 0;
+  min-height: 250px;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+.textWrapper {
+  min-width: 55px;
+}
+
+.otherservice .card {
+  min-height: 110px;
+  border: 0;
+}
+
+.otherservice h5 {
+  margin-bottom: 3px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  padding-left: 15px;
+}
+
+.otherservice h4 {
+  font-weight: 600;
+}
+
+.forbg {
+  border-radius: 12px 0 0 12px;
+  // background-color: #0962ea;
+  background-color: #001D6E;
+}
+
+
 $primary-color: #0962ea;
 $primary-color2: #0042ff;
 $primary-color3: #120078;
@@ -6,8 +59,8 @@ $text-color1: #c0c0c0;
 
 .navbar {
   background-color: transparent !important;
-  overflow: hidden;
   transition: 0.5s all ease-in;
+  min-height: 110px;
 }
 
 .navbar li a {
@@ -45,9 +98,11 @@ $text-color1: #c0c0c0;
 }
 
 @media (max-width: 767px) {
-  .navbar {
+  nav {
     background-color: #f8f9fa !important;
   }
+
+  
 
   .navbar li a {
     color: #111111 !important;

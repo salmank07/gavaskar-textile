@@ -1,21 +1,25 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import jump from 'jump.js';
 import * as AOS from 'aos';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-main-content',
+  templateUrl: './main-content.component.html',
+  styleUrls: ['./main-content.component.scss']
 })
-export class AppComponent {
+export class MainContentComponent implements OnInit {
+
   ariaExpanded: boolean = false;
   windowScrolled: boolean = false;
 
   constructor() {
-    
+    AOS.init({ duration: 1000 });
+    console.log(AOS)
   }
 
-  ngOnInit() { }
+  ngOnInit() {
+    AOS.init({ duration: 1000 });
+   }
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll = ($event: any) => {

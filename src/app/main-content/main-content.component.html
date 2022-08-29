@@ -1,0 +1,426 @@
+<section class="nav_bar">
+  <nav class="navbar fixed-top bg-dark navbar-expand-md pt-0" id="mainNav">
+    <div class="container">
+      <a class="px-3 navbar-brand text-white cursorp" (click)="scrollToTarget('.landingPage')"><img
+          src="../assets/images/logo.png" height="100px" class="imgProp w-100" alt=""></a>
+      <button class="navbar-toggler" id="menu-button" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon h-100">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-3 px-md-0 px-lg-0">
+          <li class="nav-item">
+            <a class="nav-link cursorp" (click)="scrollToTarget('.landingPage')" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cursorp" (click)="scrollToTarget('.about')">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" (click)="scrollToTarget('.services')"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-dark" href="#">Acs Chappala</a></li>
+              <li><a class="dropdown-item text-dark" routerLink="onlineService">Acs Online Services</a></li>
+              <li><a class="dropdown-item text-dark" routerLink="dataAnalysis">Acs Data Analysis</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cursorp" (click)="scrollToTarget('.data')">Training</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cursorp" (click)="scrollToTarget('.contact')">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+<section id="intro" class="landingPage">
+  <div class="intro-container">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"><span class="dot"></span></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"><span
+            class="dot"></span></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"><span
+            class="dot"></span></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../assets/images/bg13.jpg" class="d-block w-100 h-100 intro-img" alt="">
+          <div class="carousel-caption d-md-block">
+            <h5 class="title">We Believe in growth<br /> at Every Steps</h5>
+            <p>
+              Quality never Goes out of style in the walks
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/images/bg11.jpg" class="d-block w-100 h-100 intro-img" alt="">
+          <div class="carousel-caption d-md-block">
+            <h5 class="title">The Fastest Way to<br /> Achieve Success</h5>
+            <p>
+              We believe in turning clients in to family
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/images/bg1.jpg" class="d-block w-100 h-100 intro-img" alt="">
+          <div class="carousel-caption d-md-block">
+            <h5 class="title">The Answer to All Your <br />Problem is With Us</h5>
+            <p>
+              True service is our magic formula
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quickReach">
+  <div class="container" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <div class="row g-4" data-aos="fade-up">
+      <div class="infoalign col-lg-4 col-md-6 col-sm-6">
+        <div class="wrapper">
+          <div class="infoicon">
+            <i class="bi bi-headset"></i>
+          </div>
+          <div class="infocaption">
+            <p>Call Us Anytime</p>
+            <p class="inlinetext"><a class="decornone" href="tel:9486020203">
+                9486020203</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="infoalign col-lg-4 col-md-6 col-sm-6">
+        <div class="wrapper">
+          <div class="infoicon">
+            <i class="bi bi-geo"></i>
+          </div>
+          <div class="infocaption">
+            <p>Locate Us</p>
+            <p class="inlinetext">
+              Kandanvilai,
+              Kanyakumari Dist
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="infoalign col-lg-4 col-md-6 col-sm-6">
+        <div class="wrapper">
+          <div class="infoicon">
+            <i class="bi bi-envelope"></i>
+          </div>
+          <div class="infocaption">
+            <p>Email</p>
+            <p class="inlinetext">
+              <a href="mailto:acsglobalventures2021@gmail.com" class="decornone">
+                acsglobalventures2021@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about d-flex align-items-center">
+  <div class="container-fluid position-relative" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <div class="row" style="position: relative;">
+      <div class="col-md-9 bigtext  pr-0 py-5 offset-md-3 align-self-end">
+        <div class="wrap p-4">
+          <!-- <h3>
+              About Us
+            </h3> -->
+          <p class="p-3">
+            An application developer’s typical responsibilities include coding, designing, application management,
+            troubleshooting, monitoring updates and possible security threats, and providing end user support. Software
+            development is a constant work in progress. Our customers value our agnostic and independent approach as it
+            enables them to make better decisions. It’s what drives us on to be more responsive, more innovative, and
+            more
+            switched-on than yours. We take care of everything for you, helping to keep your business running
+            efficiently
+            using the latest technology.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="text-white scrollDown">
+      <a href="">SCROLL DOWN <i class="fa-solid fa-angle-down"></i></a>
+    </div>
+
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="container">
+    <h2 class="secTitle text-center pb-5">
+      Our Services
+    </h2>
+    <div class="row bshadow g-0">
+      <div class="col-md-5 pl-md-0 pr-md-0" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+        <img src="../assets/images/bg21.jpg" class="w-100" height="100%" alt="">
+      </div>
+      <div class="col-md-7 bg-white d-flex align-items-center" data-aos="fade-left"
+        data-aos-anchor-placement="center-bottom">
+        <div class="row irukku row-cols-1 row-cols-md-2 g-1">
+          <div class="col">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <div class="iconbox">
+                  <div class="iconwrapper">
+                    <i class="fa-solid fa-user-astronaut"></i>
+                  </div>
+                </div>
+                <h5 class="card-title">ACS Chappala</h5>
+                <p class="card-text">We believe in growth at every step</p>
+              </div>
+              <div class="card-footer">
+                <p><i class="fa-solid fa-arrow-right-long"></i></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <div class="iconbox">
+                  <div class="iconwrapper">
+                    <i class="fa-solid fa-globe"></i>
+                  </div>
+                </div>
+                <h5 class="card-title">ACS Online Services</h5>
+                <p class="card-text">True service is our magic formula</p>
+              </div>
+              <div routerLink="onlineService" class="card-footer">
+                <p><i class="fa-solid fa-arrow-right-long"></i></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <div class="iconbox">
+                  <div class="iconwrapper">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                  </div>
+                </div>
+                <h5 class="card-title">ACS Data Analysis</h5>
+                <p class="card-text">We believe in turning clients into family</p>
+              </div>
+              <div routerLink="DataAnalysis" class="card-footer">
+                <p><i class="fa-solid fa-arrow-right-long"></i></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <div class="iconbox">
+                  <div class="iconwrapper">
+                    <i class="fa-solid fa-users"></i>
+                  </div>
+                </div>
+                <h5 class="card-title">Public relation</h5>
+                <p class="card-text">Online Public Social services</p>
+              </div>
+              <div class="card-footer">
+                <p><i class="fa-solid fa-arrow-right-long"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="data" class="data">
+  <div class="container">
+    <h2 class="secTitle text-center pb-5">
+      Acs Data Analysis
+    </h2>
+    <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">
+      <div class="col" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="center-bottom">
+        <div class="emptybox"></div>
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="iconbox">
+              <div class="iconwrapper">
+                <i class="fa-solid fa-text-width"></i>
+              </div>
+            </div>
+            <h4 class="card-title">Typing</h4>
+            <p class="card-text">The process of Transcribing Information is Data entry</p>
+          </div>
+        </div>
+      </div>
+      <div class="col" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="center-bottom">
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="iconbox">
+              <div class="iconwrapper">
+                <i class="fa-solid fa-language"></i>
+              </div>
+            </div>
+            <h4 class="card-title">Translation</h4>
+            <p class="card-text">Translation & Interpretation the Inputs in the projects</p>
+          </div>
+        </div>
+      </div>
+      <div class="col" data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="center-bottom">
+        <div class="emptybox"></div>
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="iconbox">
+              <div class="iconwrapper">
+                <i class="fa-solid fa-audio-description"></i>
+              </div>
+            </div>
+            <h4 class="card-title">Audio Description</h4>
+            <p class="card-text">Listen to the audio and Enter the data</p>
+          </div>
+        </div>
+      </div>
+      <div class="col" data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="center-bottom">
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="iconbox">
+              <div class="iconwrapper">
+                <i class="fa-solid fa-arrow-up-z-a"></i>
+              </div>
+            </div>
+            <h4 class="card-title">Subtitling</h4>
+            <p class="card-text">Transcribing, Updating Information, and Entering Data.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-12" data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="center-bottom">
+        <div class="emptybox"></div>
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="iconbox">
+              <div class="iconwrapper">
+                <i class="fa-solid fa-closed-captioning"></i>
+              </div>
+            </div>
+            <h4 class="card-title">Captioning</h4>
+            <p class="card-text">Ultimate Choice for Typing Services in the data</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact text-white">
+  <div class="container">
+    <h3 class="text-center">Contact Us</h3>
+    <h2 class="text-dark secTitle text-center mb-5">Reach out for a new project</h2>
+    <div class="row g-2">
+      <div class="col-md-8" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15795.838100033461!2d77.32509891511098!3d8.206824997035902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x998f08e4b2f55947!2sACS%20Chappala!5e0!3m2!1sen!2sin!4v1657891423164!5m2!1sen!2sin"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-md-4" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
+        <div class="bg-black p-5">
+          <h5>
+            contact info
+          </h5>
+          <div class="row">
+            <div class="col-md-12 mb-4">
+              <h6>Where to Find Us</h6>
+              <address>
+                Johnson Complex, Kandanvilai,<br />
+                Kanyakumari Dist,<br />
+                Tamil Nadu, India
+              </address>
+            </div>
+            <div class="col-md-12 mb-4">
+              <h6>Email Us At</h6>
+              <p>
+                <a class="break" href="mailto:acsglobalventures2021@gmail.com">acsglobalventures2021@gmail.com</a>
+              </p>
+            </div>
+            <div class="col-md-12 mb-4">
+              <h6>Call Us At
+              </h6>
+              <p>
+                <a href="tel:+919486020203">+91 94860 20203</a>
+              </p>
+            </div>
+            <div class="col-md-12 mb-4">
+              <p>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer d-flex align-items-center" id="footer">
+  <div class="container">
+    <div class="row g-4 p-2 row-cols-sm-3 row-cols-md-4 ">
+      <div class="col-md-4">
+        <h3 class="mb-4">
+          Acs Global Ventures
+        </h3>
+        <p>
+          An application developer’s typical responsibilities include coding, designing, application management,
+          troubleshooting, monitoring updates and possible security threats, and providing end user support.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h6>
+          Quick Links
+        </h6>
+        <ul>
+          <li><a class="cursorp" (click)="scrollToTarget('.landingPage')">Home</a></li>
+          <li><a class="cursorp" (click)="scrollToTarget('.about')">About</a></li>
+          <li><a class="cursorp" (click)="scrollToTarget('.services')">Services</a></li>
+          <li><a class="cursorp" (click)="scrollToTarget('.contact')">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6>
+          Contact Information
+        </h6>
+        <ul>
+          <li><span class="iconcontainer"><i class="fa-solid fa-location-arrow"></i></span>Johnson Complex,
+            Kandanvilai,<br />
+            Kanyakumari Dist,<br />Tamil Nadu, India</li>
+          <li><span class="iconcontainer"><i class="fa-solid fa-phone"></i></span><a href="tel:+919486020203">94860
+              20203</a></li>
+          <li><span class="iconcontainer"><i class="fa-solid fa-envelope"></i></span><a
+              href="mailto:acsglobalventures2021@gmail.com">acsglobalventures2021@gmail.com</a></li>
+
+        </ul>
+      </div>
+
+    </div>
+    <div class="row mt-5">
+      <div class="col">
+        <p class="text-center">This website is made with <span><i class="fa-solid fa-heart"></i></span> by
+          <a href="https://rsinfosolution.in/" class="text-light">Rsinfosolution</a>
+        </p>
+
+      </div>
+    </div>
+  </div>
+</footer>
