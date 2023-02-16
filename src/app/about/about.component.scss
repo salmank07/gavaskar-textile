@@ -1,0 +1,64 @@
+#about .imgContainer {
+    background: url(../../assets/images/bg48.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+    color: #fff;
+    margin: 4rem 0;
+}
+
+.dflex-end {
+    display: flex;
+    align-items: flex-end;
+}
+
+#about i {
+    font-size: 2rem;
+}
+
+#about .aboutTitle {
+    color: #fff;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+#about .whatWeDo {
+    background: url(../../assets/images/bg17.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 6rem 0;
+    margin: 4rem 0;
+}
+
+.doContent {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.doContent p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.doContent h4 {
+    border-left: 10px solid #fff;
+    padding-left: 1.5rem;
+}
+
+#team {
+    padding: 4rem 0 6rem 0;
+}
+
+#team .card {
+    background-color: transparent;
+    border: 0;
+}
+#team img{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}

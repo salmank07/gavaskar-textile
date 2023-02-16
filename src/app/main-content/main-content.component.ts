@@ -1,6 +1,6 @@
-import { Component, HostListener, OnInit } from '@angular/core';
-import jump from 'jump.js';
+import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
+
 
 @Component({
   selector: 'app-main-content',
@@ -9,47 +9,25 @@ import * as AOS from 'aos';
 })
 export class MainContentComponent implements OnInit {
 
-  ariaExpanded: boolean = false;
-  windowScrolled: boolean = false;
-
   constructor() {
     AOS.init({ duration: 1000 });
-    console.log(AOS)
+    this.productList();
   }
 
   ngOnInit() {
     AOS.init({ duration: 1000 });
-   }
-
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll = ($event: any) => {
-    const verticalOffset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-
-    if (verticalOffset > 50) {
-      document.getElementById("mainNav").classList.add('navbar-shrink');
-      this.windowScrolled = true;
-    } else if (this.windowScrolled && verticalOffset < 10) {
-      this.windowScrolled = false;
-      document.getElementById("mainNav").classList.remove('navbar-shrink');
-    }
   }
-
-  clickMenu = () => {
-    this.ariaExpanded = !this.ariaExpanded;
+list: any[];
+  productList() {
+    this.list = [
+      {title: 'edu seedor', des: "Eduaction/Learning/training"},
+      {title: 'crm seedor', des: "Customer Relationship Management"},
+      {title: 'factory seedor', des: "Manufacturing/Warehouse/freight"},
+      {title: 'my seedor', des: "Membership/Institution/Public Sector"},
+      {title: 'cafe seedor', des: "Hospitality/Restaurant/Hotels"},
+      {title: 'build seedor', des: "MEP/Construction/Facade"},
+      {title: 'book seedor', des: "Professional/Accounting/Other"},
+      {title: 'bill seedor', des: "Retail/Billing/Trade"},
+    ]
   }
-
-  scrollToTarget = (target: string) => {
-    const menuButtonElement = document.getElementById("menu-button");
-    menuButtonElement.setAttribute("aria-expanded", "false");
-    document.getElementById("navbarSupportedContent").classList.remove('show');
-    this.ariaExpanded = false;
-    jump(target, {
-      offset: -50
-    });
-  }
-
-  scrollToTop = () => {
-    jump('.landingPage');
-  }
-  
 }

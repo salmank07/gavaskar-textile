@@ -1,6 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import jump from 'jump.js';
 import * as AOS from 'aos';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ export class AppComponent {
   ariaExpanded: boolean = false;
   windowScrolled: boolean = false;
 
-  constructor() {
+  constructor(private router: Router) {
     
   }
 
@@ -39,9 +40,7 @@ export class AppComponent {
     menuButtonElement.setAttribute("aria-expanded", "false");
     document.getElementById("navbarSupportedContent").classList.remove('show');
     this.ariaExpanded = false;
-    jump(target, {
-      offset: -50
-    });
+    this.router.navigate([target]);
   }
 
   scrollToTop = () => {

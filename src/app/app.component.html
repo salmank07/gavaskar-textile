@@ -1,1 +1,100 @@
+<section class="nav_bar">
+    <nav class="navbar fixed-top navbar-expand-md pt-0" id="mainNav">
+        <div class="container">
+            <a class="px-3 navbar-brand text-white cursorp" (click)="scrollToTarget('')"><img
+                    src="../assets/images/logo.png" height="100px" class="imgProp w-100" alt=""></a>
+            <button class="navbar-toggler" id="menu-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon h-100">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-3 px-md-0 px-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link cursorp" (click)="scrollToTarget('')" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cursorp" (click)="scrollToTarget('about')">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" routerLink="#"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-dark" href="#">Acs Chappala</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cursorp" (click)="scrollToTarget('onlineService')">Online Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cursorp" (click)="scrollToTarget('DataAnalysis')">Data Analysis</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link cursorp" (click)="scrollToTarget('.data')">Training</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cursorp" (click)="scrollToTarget('.contact')">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
 <router-outlet></router-outlet>
+<footer class="footer d-flex align-items-center" id="footer">
+    <div class="container">
+        <div class="row g-4 p-2 row-cols-sm-3 row-cols-md-4 ">
+            <div class="col-md-4">
+                <h3 class="mb-4">
+                    Acs Global Ventures
+                </h3>
+                <p>
+                    An application developer’s typical responsibilities include coding, designing, application
+                    management,
+                    troubleshooting, monitoring updates and possible security threats, and providing end user support.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h6>
+                    Quick Links
+                </h6>
+                <ul>
+                    <li><a class="cursorp" routerLink="">Home</a></li>
+                    <li><a class="cursorp" routerLink="about">About</a></li>
+                    <li><a class="cursorp" routerLink="">Acs Chappala</a></li>
+                    <li><a class="cursorp" routerLink="onlineService">Online Services</a></li>
+                    <li><a class="cursorp" routerLink="DataAnalysis">Data Analysis</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h6>
+                    Contact Information
+                </h6>
+                <ul>
+                    <li><span class="iconcontainer"><i class="fa-solid fa-location-arrow"></i></span>Johnson Complex,
+                        Kandanvilai,<br />
+                        Kanyakumari Dist,<br />Tamil Nadu, India</li>
+                    <li><span class="iconcontainer"><i class="fa-solid fa-phone"></i></span><a
+                            href="tel:+919486020203">94860
+                            20203</a></li>
+                    <li><span class="iconcontainer"><i class="fa-solid fa-envelope"></i></span><a
+                            href="mailto:info@acsglobalventures.com">info@acsglobalventures.com</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <p class="text-center">This website is made with <span><i class="fa-solid fa-heart"></i></span> by
+                    <a href="https://rsinfosolution.in/" class="text-light">Rsinfosolution</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>

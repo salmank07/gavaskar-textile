@@ -1,47 +1,6 @@
-<section class="nav_bar">
-  <nav class="navbar fixed-top bg-dark navbar-expand-md pt-0" id="mainNav">
-    <div class="container">
-      <a class="px-3 navbar-brand text-white cursorp" (click)="scrollToTarget('.landingPage')"><img
-          src="../assets/images/logo.png" height="100px" class="imgProp w-100" alt=""></a>
-      <button class="navbar-toggler" id="menu-button" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon h-100">
-          <i class="fa-solid fa-bars"></i>
-        </span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-3 px-md-0 px-lg-0">
-          <li class="nav-item">
-            <a class="nav-link cursorp" (click)="scrollToTarget('.landingPage')" aria-current="page">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link cursorp" (click)="scrollToTarget('.about')">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" (click)="scrollToTarget('.services')"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Services
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item text-dark" href="#">Acs Chappala</a></li>
-              <li><a class="dropdown-item text-dark" routerLink="onlineService">Acs Online Services</a></li>
-              <li><a class="dropdown-item text-dark" routerLink="dataAnalysis">Acs Data Analysis</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link cursorp" (click)="scrollToTarget('.data')">Training</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link cursorp" (click)="scrollToTarget('.contact')">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</section>
 <section id="intro" class="landingPage">
-  <div class="intro-container">
+
+  <!-- <div class="intro-container">
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -80,6 +39,15 @@
           </div>
         </div>
       </div>
+    </div>
+  </div> -->
+
+  <div class="vdcontainer w-100 h-100">
+    <video class="vid" src="../../assets/images/background_video.mp4" muted autoplay loop></video>
+    <div class="vdContent">
+      <h1 class="text-light fw-bold">
+        ACS Global Ventures
+      </h1>
     </div>
   </div>
 </section>
@@ -142,14 +110,21 @@
               About Us
             </h3> -->
           <p class="p-3">
-            An application developer’s typical responsibilities include coding, designing, application management,
+            <!-- An application developer’s typical responsibilities include coding, designing, application management,
             troubleshooting, monitoring updates and possible security threats, and providing end user support. Software
             development is a constant work in progress. Our customers value our agnostic and independent approach as it
             enables them to make better decisions. It’s what drives us on to be more responsive, more innovative, and
             more
             switched-on than yours. We take care of everything for you, helping to keep your business running
             efficiently
-            using the latest technology.
+            using the latest technology. -->
+            We provide end-to-end digitization services and have created a strong track record in the industry with a
+            portfolio of more than 2000 satisfied
+            customers. With good years of experience in the industry, we have created a prominent position, helping
+            businesses with the efficient
+            management of data. Our key strengths are our established processes, dedicated workforce, commitment to 24/7
+            customer support, and
+            advanced technologies. These factors empower us to deliver top quality services to our clients.
           </p>
         </div>
       </div>
@@ -158,6 +133,38 @@
       <a href="">SCROLL DOWN <i class="fa-solid fa-angle-down"></i></a>
     </div>
 
+  </div>
+</section>
+<section class="mission my-5" id="mission">
+  <h2 class="secTitle mb-5 text-center">Our Mission & Vision</h2>
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-md-6 order-sm-1 order-md-1">
+        <img src="../../assets/images/bg47.jpg" class="imgProp w-100 h-100" alt="">
+      </div>
+      <div class="col-md-6 dflex order-sm-2 order-md-2">
+        <div class="p-md-5 p-4">
+          <h2 class="secTitle mb-4">Our Mission</h2>
+          <p>Our customers are central to our mission. We are the specialized outsourcing
+            solutions provider and committed to providing the highly efficient employees to
+            various corporate and opening up opportunities for both by providing the highest
+            quality of outsources employment and human resource services. We understand that
+            success is important to both our clients and our associates.</p>
+        </div>
+      </div>
+      <div class="col-md-6 dflex order-sm-4 order-md-3">
+        <div class="p-md-5 p-4">
+          <h2 class="secTitle mb-4">Our Vision</h2>
+          <p>We continuously strive to become the best human resource services preferred for
+            employment. We are the leading and most respected staffing service. We are
+            dedicated to serving our clients and communities with a high level of services,
+            honesty, integrity, knowledge, and professionalism.</p>
+        </div>
+      </div>
+      <div class="col-md-6 order-sm-3 order-md-4">
+        <img src="../../assets/images/bg17.jpg" class="imgProp w-100 h-100" alt="">
+      </div>
+    </div>
   </div>
 </section>
 
@@ -243,11 +250,46 @@
   </div>
 </section>
 
+<section id="products" class="products">
+  <div class="imageCon position-relative">
+    <div class="text-center mb-5 pb-5">
+      <h2 class="fw-bold secTitle text-dark">Our Products</h2>
+      <h5>Everything you need to grow your business</h5>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,128L30,122.7C60,117,120,107,180,133.3C240,160,300,224,360,240C420,256,480,224,540,224C600,224,660,256,720,245.3C780,235,840,181,900,181.3C960,181,1020,235,1080,245.3C1140,256,1200,224,1260,202.7C1320,181,1380,171,1410,165.3L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4 align-items-center justify-content-center">
+      <div class="col-md-3" *ngFor="let item of list;let i = index;">
+        <div class="card text-center text-sm-start border-0 h-100 rounded-0">
+          <div class="card-body">
+            <h2 class="cardTitle mb-3">0{{i+1}}</h2>
+            <h5 class="card-title fw-bold text-uppercase mb-2">{{item.title}}</h5>
+            <p class="card-text">{{item.des}}</p>
+          </div>
+          <div class="card-footer bg-white border-0">
+            <p routerLink="/seedor/{{i}}" class="cursorP fw-bold"><small class="border-bottom border-dark">MORE</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section id="data" class="data">
   <div class="container">
-    <h2 class="secTitle text-center pb-5">
+    <h2 class="secTitle text-center pb-2">
       Acs Data Analysis
     </h2>
+    <p class="text-center pb-5">At ACS DATA Analysis, we
+      deliver professional digitization services, allowing you to promote easy data transfer among a large number
+      of recipients.</p>
     <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">
       <div class="col" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="center-bottom">
         <div class="emptybox"></div>
@@ -317,10 +359,11 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
+
+
 
 <section id="contact" class="contact text-white">
   <div class="container">
@@ -374,53 +417,3 @@
     </div>
   </div>
 </section>
-<footer class="footer d-flex align-items-center" id="footer">
-  <div class="container">
-    <div class="row g-4 p-2 row-cols-sm-3 row-cols-md-4 ">
-      <div class="col-md-4">
-        <h3 class="mb-4">
-          Acs Global Ventures
-        </h3>
-        <p>
-          An application developer’s typical responsibilities include coding, designing, application management,
-          troubleshooting, monitoring updates and possible security threats, and providing end user support.
-        </p>
-      </div>
-      <div class="col-md-4">
-        <h6>
-          Quick Links
-        </h6>
-        <ul>
-          <li><a class="cursorp" (click)="scrollToTarget('.landingPage')">Home</a></li>
-          <li><a class="cursorp" (click)="scrollToTarget('.about')">About</a></li>
-          <li><a class="cursorp" (click)="scrollToTarget('.services')">Services</a></li>
-          <li><a class="cursorp" (click)="scrollToTarget('.contact')">Contact</a></li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <h6>
-          Contact Information
-        </h6>
-        <ul>
-          <li><span class="iconcontainer"><i class="fa-solid fa-location-arrow"></i></span>Johnson Complex,
-            Kandanvilai,<br />
-            Kanyakumari Dist,<br />Tamil Nadu, India</li>
-          <li><span class="iconcontainer"><i class="fa-solid fa-phone"></i></span><a href="tel:+919486020203">94860
-              20203</a></li>
-          <li><span class="iconcontainer"><i class="fa-solid fa-envelope"></i></span><a
-              href="mailto:acsglobalventures2021@gmail.com">acsglobalventures2021@gmail.com</a></li>
-
-        </ul>
-      </div>
-
-    </div>
-    <div class="row mt-5">
-      <div class="col">
-        <p class="text-center">This website is made with <span><i class="fa-solid fa-heart"></i></span> by
-          <a href="https://rsinfosolution.in/" class="text-light">Rsinfosolution</a>
-        </p>
-
-      </div>
-    </div>
-  </div>
-</footer>

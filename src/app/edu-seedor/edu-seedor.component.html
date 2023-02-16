@@ -1,0 +1,58 @@
+<section id="seedor" class="seedor">
+    <div class="imageConatainer dflex">
+        <h2 class="text-white text-uppercase">
+            {{data.title}}
+        </h2>
+    </div>
+    <div class="container my-5">
+        <div class="row g-5">
+            <div class="col-md-5 dflex">
+                <img [src]="data.src" class="rounded-3 h-100 w-100" alt="">
+            </div>
+            <div class="col-md-7 seedorIntro align-self-center">
+                <div class="p-4 mt-4">
+                    <h3 class="mb-4 fw-bold">{{data.title}}</h3>
+                    <p>{{data.des}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 pt-5 bundle">
+            <h2 class="text-center mb-5 fw-bold">What you get in this Bundle</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4 my-5">
+                <div class="col-md-4" *ngFor="let item of data.bundle">
+                    <div class="card h-100 border-0 my-3">
+                        <div class="card-body">
+                            <div class="iconBox mb-3 dflex">
+                                <i [class]="item.icon"></i>
+                            </div>
+                            <h5 class="card-title text-center">{{item.bdes}}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="features my-5">
+            <h2 class="my-4 text-center fw-bold">
+                Highlighting Features
+            </h2>
+            <div class="row py-md-4 my-md-5" *ngFor="let data of data.features; let i = index;">
+                <div class="col-md-6 order-1" [ngClass]="{'order-md-2' : i%2 == 0}">
+                    <img [src]="data.fsrc" class="shadow rounded-3 w-100 h-100" alt="">
+                </div>
+                <div class="col-md-6 forNum position-relative order-2 p-5" attr.data-after-content="0{{i+1}}"
+                    [ngClass]="{'order-md-1' : i%2 == 0}">
+                    <h3 class="fw-bold mb-3">{{data.ftitle}}</h3>
+                    <p>
+                        {{data.fdes}}
+                    </p>
+                    <ul class="text-muted">
+                        <li *ngFor="let listitem of data.list; let q = index;">
+                            <span><i class="fa-regular fa-circle-check"></i></span>
+                            {{listitem}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

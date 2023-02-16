@@ -72,58 +72,61 @@ $text-color1: #c0c0c0;
   }
 }
 
-#intro .title {
-  color: #fff;
-  margin-bottom: 20px;
-  font-size: 48px;
-  font-weight: 700;
-}
+// #intro .title {
+//   color: #fff;
+//   margin-bottom: 20px;
+//   font-size: 48px;
+//   font-weight: 700;
+// }
 
-#intro .caption {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
+// #intro .caption {
+//   font-size: 16px;
+//   font-weight: 400;
+//   line-height: 24px;
+// }
 
-#intro .carousel,
-#intro .carousel-inner,
-#intro .carousel-item,
-#intro .carousel-item::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
+// #intro .carousel,
+// #intro .carousel-inner,
+// #intro .carousel-item,
+// #intro .carousel-item::before {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   left: 0;
+//   bottom: 0;
+// }
 
-#intro .carousel-item {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+// #intro .carousel-item {
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+// }
 
-#intro .carousel-item::before {
-  content: "";
-  background-color: rgba(9, 98, 234, 0.6);
+// #intro .carousel-item::before {
+//   content: "";
+//   background-color: rgba(9, 98, 234, 0.6);
 
-}
+// }
 
-#intro .carousel-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  top: 70px;
-  left: 50px;
-  right: 50px;
-}
+// #intro .carousel-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: absolute;
+//   bottom: 0;
+//   top: 70px;
+//   left: 50px;
+//   right: 50px;
+// }
 
-#intro h2 {
-  color: #fff;
-  margin-bottom: 30px;
-  font-size: 48px;
-  font-weight: 700;
+// #intro h2 {
+//   color: #fff;
+//   margin-bottom: 30px;
+//   font-size: 48px;
+//   font-weight: 700;
+// }
+#intro .carousel-inner {
+  overflow: visible;
 }
 
 @media (max-width: 768px) {
@@ -143,24 +146,24 @@ $text-color1: #c0c0c0;
   }
 }
 
-#intro .carousel-fade {
-  overflow: hidden;
-}
+// #intro .carousel-fade {
+//   overflow: hidden;
+// }
 
-#intro .carousel-fade .carousel-inner .carousel-item {
-  transition-property: opacity;
-}
+// #intro .carousel-fade .carousel-inner .carousel-item {
+//   transition-property: opacity;
+// }
 
-.carousel-caption {
-  // padding-bottom: 230px;
-  bottom: 35%;
-  text-align: left;
-}
+// .carousel-caption {
+//   // padding-bottom: 230px;
+//   bottom: 35%;
+//   text-align: left;
+// }
 
-#intro .intro-img {
-  background-size: cover;
-  object-fit: cover;
-}
+// #intro .intro-img {
+//   background-size: cover;
+//   object-fit: cover;
+// }
 
 .carousel-indicators [data-bs-target] {
   height: 6px !important;
@@ -358,6 +361,21 @@ $text-color1: #c0c0c0;
   z-index: 1;
 }
 
+#mission {
+  padding: 4rem 0;
+}
+
+#mission p {
+  color: #64676c;
+  line-height: 1.6;
+}
+
+#mission img {
+  min-height: 450px;
+  max-height: 450px;
+  object-fit: cover;
+}
+
 @media (max-width: 360px) {
   #about {
     height: 125vh !important;
@@ -477,8 +495,13 @@ $text-color1: #c0c0c0;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 5rem 0 6rem 0;
+  padding: 0rem 0 6rem 0;
+  margin-top: 5rem;
   height: 115vh;
+}
+
+#data p {
+  color: #6c757d;
 }
 
 #data .card {
@@ -719,4 +742,74 @@ h6 {
 
 section {
   overflow: hidden;
+}
+
+.vdcontainer {
+  position: relative;
+}
+
+.vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.vdContent {
+  position: absolute;
+  top: 45%;
+  right: 20%;
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .vid {
+    width: auto;
+    height: 100%;
+  }
+
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .vid {
+    width: 100%;
+    height: auto;
+  }
+}
+
+#products {
+  padding: 5rem 0;
+  background-color: #fff;
+}
+
+#products .imageCon {
+  background: url(../../assets/images/bg51.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#products .imageCon svg {
+  position: absolute;
+  bottom: 0;
+}
+
+#products .card {
+  transition: all 0.4s ease-in;
+}
+
+#products .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+#products .cardTitle {
+  font-size: 3rem;
+  color: #3330E4;
+  font-weight: 700;
 }

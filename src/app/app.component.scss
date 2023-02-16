@@ -5,9 +5,9 @@ $grad: linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
 $text-color1: #c0c0c0;
 
 .navbar {
-  background-color: transparent !important;
-  overflow: hidden;
-  transition: 0.5s all ease-in;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.10s all ease-in;
+  height: 80px;  
 }
 
 .navbar li a {
@@ -47,6 +47,10 @@ $text-color1: #c0c0c0;
 @media (max-width: 767px) {
   .navbar {
     background-color: #f8f9fa !important;
+    height: 100px;
+  }
+  .navbar .container {
+    background-color: inherit;
   }
 
   .navbar li a {
